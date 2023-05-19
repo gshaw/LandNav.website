@@ -21,4 +21,12 @@ just install
 just start
 ```
 
-Pushing to GitHub will publish the site.
+Pushing to GitHub will publish the site on CloudFlare.
+
+### Powered By
+
+- Domain Register: [Namecheap](https://www.namecheap.com)
+- DNS: [CloudFlare DNS](https://www.cloudflare.com/dns/)
+- Hosting: [CloudFlare Pages](https://pages.cloudflare.com)
+- Build System: [Jekyll](https://jekyllrb.com)
+- CSS: [Pico.css](https://picocss.com)
