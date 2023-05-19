@@ -7,11 +7,11 @@ ogimage: /icon.png
 
 A land navigation GPS and offline map app built for iOS. No ads. Privacy respected.
 
-<img alt="Animation of Land Nav" src="screenshots/00.gif" width="296px">
 <img alt="Screenshot of Land Nav" src="screenshots/01.png" width="300px">
 <img alt="Screenshot of Land Nav" src="screenshots/02.png" width="300px">
 <img alt="Screenshot of Land Nav" src="screenshots/03.png" width="300px">
 <img alt="Screenshot of Land Nav" src="screenshots/05.png" width="300px">
+<img alt="Animation of Land Nav" src="screenshots/00.gif" width="296px">
 
 - 3D topographical and satellite maps
 - Downloadable maps for offline use
