@@ -3,8 +3,6 @@ title: Land Nav
 ogimage: /icon.png
 ---
 
-# <img alt="Land Nav app icon" src="icon.png" width="50"> {{ page.title }}
-
 A land navigation GPS and offline map app built for iOS. No ads. Privacy respected.
 
 <div style="background:#FECC02; padding: 10px; text-align:center; margin-bottom: 1em;">
@@ -34,5 +32,3 @@ Available on [Test Flight](https://testflight.apple.com/join/H0KyC9eP) while in 
 <!--
 <a href="https://apps.apple.com/us/app/birds-near-me/id918377574?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1412812800?h=5677661d9ae4c8ba256daa38c3ae4807" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
 -->
-
-© 2023 [Gerry Shaw](https://gshaw.ca) • [Support](/support) • [Privacy Policy](/privacy)

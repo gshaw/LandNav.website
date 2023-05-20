@@ -1,8 +1,28 @@
+<!doctype html>
+<html>
+
 {% include head.html %}
 
 <body>
   <main class="container">
+    <h1>
+      <a href="/"><img alt="Land Nav app icon" src="icon.png" width="50"></a>
+      {{ page.title }}
+    </h1>
+
     {{ content }}
+
+    <hr>
+
+    <p>
+      © 2023 <a href="https://gshaw.ca">Gerry Shaw</a>
+      •
+      <a href="/support">Support</a>
+      •
+      <a href="/privacy">Privacy Policy</a>
+      •
+      <a href="/devlog">Devlog</a>
+    </p>
   </main>
 </body>
 

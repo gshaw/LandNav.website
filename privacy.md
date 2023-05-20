@@ -2,8 +2,6 @@
 title: Land Nav Privacy Policy
 ---
 
-### {{ page.title }}
-
 This Privacy Policy describes how your personal information is handled in Land Nav.
 
 **Land Nav Collects No Personal Information**
