@@ -8,6 +8,18 @@ I'm glad I didn't know how much effort it was going to take before I started bec
 
 A lot of the work was caused by figuring out how it should work and learning state management in Swift UI. I think I rebuilt the app 3 times before finally understanding how to efficiently architect a large scale SwiftUI app and come up with a design that I was happy with.
 
+May 22
+
+- [x] 1.0.1 released and avialable on the app store
+- [x] Tested in-app purchase on my device. It works, yay, at leaset I've made one sale!
+- [x] Continued evaluating geocoding and geosearch APIs.
+
+May 21
+
+- [x] Approved by Apple and released on the App Store 🎉 and then taken off because I didn't submit the in-app purchase along with the app so the buy feature wouldn't work :(
+- [x] Version 1.0.1 submitted
+- [x] Worked on search feature using openrouteservice.org for now. I don't think I'll be able to ship with that service because rate limits are too low. Geocoding APIs are surprisingly expensive...
+
 May 19
 
 - [x] Create screenshots and other details for App Store
@@ -17,6 +29,7 @@ May 19
 - [x] Extract offline map state to prevent menu flashing when maps are downloading because of changing settings state
 - [x] Correctly collapse expanded badges in landscape
 - [x] Attempted to put elevation for map center and location expanded badges but rejected as it takes up too much room. Maybe distance and bearing section would be better?
+- [x] Improved haptic feedback. Was going to add haptic when alert shows but turned out to be too much and not needed, especially when using swipe to delete which already includes a system haptic.
 
 May 18
 
