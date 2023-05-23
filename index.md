@@ -3,7 +3,7 @@ title: Land Nav
 ogimage: /icon.png
 ---
 
-A land navigation GPS and offline map app built for iOS. No ads. Privacy respected.
+GPS and offline maps for iOS. No ads. Privacy respected.
 
 <div style="background:#FECC02; padding: 10px; text-align:center; margin-bottom: 1em;">
 <img alt="Screenshot of Land Nav" src="screenshots/01.jpg" width="300">
