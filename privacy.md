@@ -2,6 +2,8 @@
 title: Land Nav Privacy Policy
 ---
 
+Last updated May 19, 2022
+
 This Privacy Policy describes how your personal information is handled in Land Nav.
 
 **Land Nav Collects No Personal Information**
