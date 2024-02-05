@@ -8,10 +8,30 @@ I'm glad I didn't know how much effort it was going to take before I started bec
 
 A lot of the work was caused by figuring out how it should work and learning state management in Swift UI. I think I rebuilt the app 3 times before finally understanding how to efficiently architect a large scale SwiftUI app and come up with a design that I was happy with.
 
-May 22
+Feb 5
 
-- [x] 1.0.1 released and avialable on the app store
-- [x] Tested in-app purchase on my device. It works, yay, at leaset I've made one sale!
+- [x] Update website with What's New information.
+
+Feb 2
+
+- [x] Integrate What's New functionality
+
+Feb 1, 2024
+
+- [x] Finalize search feature
+- [x] Finalize drawing regions and routes
+- [x] Finalize ruler feature
+
+Rest of 2023
+
+Long break to see what the market would do for the app.  Unfortunately it didn't go viral and make me 10s of thousands (or even thousands).  The feedback I recived was positive so I think I'm the right track.
+
+I worked on and off on the next major features for search, a ruler, and routes and regions.
+
+May 22, 2023
+
+- [x] 1.0.1 released and available on the app store
+- [x] Tested in-app purchase on my device. It works, yay, at least I've made one sale!
 - [x] Continued evaluating geocoding and geosearch APIs.
 
 May 21
@@ -58,7 +78,7 @@ May 16
 
 May 15
 
-- [x] Fix menu flashing by refactor to use app state container: https://www.fivestars.blog/articles/app-state/
+- [x] Fix menu flashing by refactor to use app state container: <https://www.fivestars.blog/articles/app-state/>
 
 May 14
 
@@ -289,7 +309,7 @@ Apr 17
 
 Apr 16
 
-- [x] Solved issues around restoring NavigationStack path issues. https://github.com/gshaw/notes/issues/10
+- [x] Solved issues around restoring NavigationStack path issues. <https://github.com/gshaw/notes/issues/10>
 - [x] Introduce SceneState for improving view state restoration
 
 Apr 15
@@ -1015,10 +1035,10 @@ Sep 19:
 - [x] Try Swift 5.7 Regex, not worth changing working code
 - [x] Refresh map annotations when waypoint settings (e.g., show coordinates always) is modified
 - [x] Investigated published changes runtime warning: Likely a bug that will be fixed. Others are having issues with it so putting it on hold until guidance from Apple becomes available.
-  - https://developer.apple.com/forums/thread/711899
-  - https://www.youtube.com/watch?v=3a7tuhVpoTQ
-  - https://stackoverflow.com/q/73323869/265940
-  - https://www.donnywals.com/xcode-14-publishing-changes-from-within-view-updates-is-not-allowed-this-will-cause-undefined-behavior/
+  - <https://developer.apple.com/forums/thread/711899>
+  - <https://www.youtube.com/watch?v=3a7tuhVpoTQ>
+  - <https://stackoverflow.com/q/73323869/265940>
+  - <https://www.donnywals.com/xcode-14-publishing-changes-from-within-view-updates-is-not-allowed-this-will-cause-undefined-behavior/>
 - [x] Consider move of operations to AppState extensions - NO
   - Difficult to separate helper methods on AppState from user operations. I fear this will be a huge logic soup if I go this direction.
   - There is some value in having helper methods used by the operations for common actions but ideally each user action is its own Operation (or Action) enum.
