@@ -7,10 +7,12 @@
   <main class="container">
     <h1>
       <a href="/">
-        <img alt="Land Nav app icon" src="icon.png" width="50" style="border-radius: 10%">
+        <img alt="Land Nav app icon" src="/icon.png" width="50" style="border-radius: 10%">
       </a>
       <span style="vertical-align: middle">{{ page.title }}</span>
     </h1>
+
+    <p>{{ page.subtitle }}</p>
 
     {{ content }}
 
@@ -19,13 +21,14 @@
     <p>
       <a href="/">Land Nav</a>
       •
+      <a href="/whatsnew">Whats New</a>
+      •
       <a href="/support">Support</a>
       •
       <a href="/privacy">Privacy Policy</a>
       •
-      <a href="/devlog">Devlog</a>
-      •
-      © 2023 <a href="https://gshaw.ca">Gerry Shaw</a>
+      © {{ site.start_year }} - {{ 'now' | date: "%Y" }} <a href="https://gshaw.ca">Gerry
+        Shaw</a>
     </p>
   </main>
 </body>

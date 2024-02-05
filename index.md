@@ -1,9 +1,8 @@
 ---
 title: Land Nav
+subtitle: GPS and offline maps for iOS. No ads. Privacy respected.
 ogimage: /icon.png
 ---
-
-GPS and offline maps for iOS. No ads. Privacy respected.
 
 <div style="background:#FECC02; padding: 10px; text-align:center; margin-bottom: 1em;">
 <img alt="Screenshot of Land Nav" src="screenshots/01.jpg" width="300">

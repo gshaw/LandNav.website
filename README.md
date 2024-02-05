@@ -2,28 +2,19 @@
 
 [Live Site](https://landnav.app)
 
-### Build Instructions
+## Build Instructions
 
-```
-brew install asdf
-asdf list
-asdf plugin add ruby
-asdf plugin-update ruby
-asdf list all ruby
-asdf install ruby latest
-asdf global ruby 3.2.2 # change specfic version to latest stable
-gem install bundler
-bundle add webrick # https://github.com/jekyll/jekyll/issues/8523
-
-brew install just
-just -l
-just install
-just start
+```sh
+brew install mise
+mise install
+mise run install
+mise run dev
+mise run deploy
 ```
 
 Pushing to GitHub will publish the site on CloudFlare.
 
-### Powered By
+## Powered By
 
 - Domain Register: [Namecheap](https://www.namecheap.com)
 - DNS: [CloudFlare DNS](https://www.cloudflare.com/dns/)
