@@ -14,6 +14,12 @@ mise run deploy
 
 Pushing to GitHub will publish the site on CloudFlare.
 
+Requires `RUBY_VERSION` environment variable to be set on production and preview deployments.
+
+Reference: <https://developers.cloudflare.com/pages/framework-guides/deploy-a-jekyll-site/>
+
+Important: Currently Cloudflare will fail if using Ruby 3.3.0
+
 ## Powered By
 
 - Domain Register: [Namecheap](https://www.namecheap.com)
