@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   // Functions to open in Apple Maps or Google Maps
   window.openInAppleMaps = function (lat, lon) {
-    window.open(`http://maps.apple.com/?ll=${lat},${lon}`);
+    window.open(`https://maps.apple.com/?ll=${lat},${lon}&q=Pin`);
   };
 
   window.openInGoogleMaps = function (lat, lon) {
