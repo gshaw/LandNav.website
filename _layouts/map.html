@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<style>
+  body,
+  html {
+    height: 100%;
+    margin: 0;
+
+    font-family: system-ui, sans-serif
+  }
+
+  a {
+    color: #000;
+    text-decoration: none
+  }
+
+  #map {
+    height: 100%;
+    width: 100%;
+  }
+
+  #logo {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1000;
+    /* Ensure the logo is above the map */
+
+
+    ;
+  }
+
+  #logo img {
+    height: 50px;
+    /* Adjust the size of the logo as needed */
+  }
+</style>
+
+<body>
+  <div id="map"></div>
+  <div id="logo">
+    <div>
+      <a href="/">
+        <h1 style="margin: 10px 0; display:flex; align-items:center">
+          <img src="/icon.png" alt="Land Nav Logo">
+          <span style="margin-left: 10px">Land Nav</span>
+        </h1>
+      </a>
+    </div>
+    <div class="">
+      GPS and offline maps for iOS. No ads. Privacy respected.
+    </div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="/assets/js/map.js"></script>
+</body>
+
+</html>
