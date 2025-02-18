@@ -16,7 +16,6 @@ kramdown:
 exclude: [
   "Gemfile",
   "Gemfile.lock",
-  "justfile",
   "LICENSE",
   "README.md"
 ]
