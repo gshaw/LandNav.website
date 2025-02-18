@@ -30,6 +30,6 @@ ogimage: /icon.png
 
 <a href="https://apps.apple.com/us/app/land-nav/id1662675017?itsct=apps_box_badge&amp;itscg=30200" style="overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1684627200" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
 
-<img style="padding:10px; width: 120px; height: 120px" alt="QR Code Download Link" src="https://tools-qr-production.s3.amazonaws.com/output/apple-toolbox/f860558e86424a7215e3cab960c13375/e1c42fd804769c0e0b252b69e9bdec7e.png">
+<img style="padding:10px; width: 120px; height: 120px" alt="QR Code Download Link" src="/qrcode.png">
 
 </div>
