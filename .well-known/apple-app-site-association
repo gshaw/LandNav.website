@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "FY82HA36BS.com.onnav.ios.marine",
+        "paths": ["/share/*"]
+      }
+    ]
+  }
+}

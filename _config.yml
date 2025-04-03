@@ -13,12 +13,14 @@ markdown: kramdown
 kramdown:
   input: GFM
 
-exclude: [
-  "Gemfile",
-  "Gemfile.lock",
-  "LICENSE",
-  "README.md"
-]
+include:
+  - .well-known
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
 
 defaults:
   -
