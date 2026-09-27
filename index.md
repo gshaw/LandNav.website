@@ -25,7 +25,7 @@ ogimage: /icon.png
 - Universal app works on iPhone and iPad
 - iCloud sync, plan on your iPad, navigate on your phone
 - No ads and no tracking
-- Generous free trial, no subscription, single in-app purchase to buy
+- Shareware: every feature works for free, no subscription, a single in-app purchase if you use it
 - Support independent app developer with a passion for the outdoors
 
 <div>
