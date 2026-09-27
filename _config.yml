@@ -1,11 +1,13 @@
 # Site settings
 title: Land Nav
-description: A land navigation tool built for iOS. No ads. Privacy respected.
+description: GPS and offline maps for iPhone and iPad. No ads. Privacy respected.
 url: https://landnav.app
+icon: /icon.png
 start_year: 2023
 author:
   name: Gerry Shaw
   email: gerry_shaw@yahoo.com
+  url: https://gshaw.ca
 
 # Build settings
 markdown: kramdown
@@ -17,21 +19,18 @@ include:
   - .well-known
 
 exclude:
+  - AGENTS.md
+  - CLAUDE.md
+  - cspell.config.yaml
   - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
+  - vendor
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
       layout: "page"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"

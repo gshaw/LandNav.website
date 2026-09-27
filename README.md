@@ -2,28 +2,22 @@
 
 [Live Site](https://landnav.app)
 
-## Build Instructions
+## Develop
 
 ```sh
-brew install mise
-mise install
-mise run install
-mise run dev
-mise run deploy
+mise install       # Ruby, Node, cspell, markdownlint, html-proofer
+mise run install   # bundle install
+mise run dev       # http://localhost:4003 with livereload
+mise run check     # build, spell check, markdown lint, internal links
 ```
 
-Pushing to GitHub will publish the site on CloudFlare.
-
-Requires `RUBY_VERSION` environment variable to be set on production and preview deployments.
-
-Reference: <https://developers.cloudflare.com/pages/framework-guides/deploy-a-jekyll-site/>
-
-Important: Currently Cloudflare will fail if using Ruby 3.3.0
+Pushing to `main` publishes the site on Cloudflare Pages. `mise run verify` checks the live site afterwards.
 
 ## Powered By
 
 - Domain Register: [Namecheap](https://www.namecheap.com)
-- DNS: [CloudFlare DNS](https://www.cloudflare.com/dns/)
-- Hosting: [CloudFlare Pages](https://pages.cloudflare.com)
+- DNS: [Cloudflare DNS](https://www.cloudflare.com/dns/)
+- Hosting: [Cloudflare Pages](https://pages.cloudflare.com)
 - Build System: [Jekyll](https://jekyllrb.com)
 - CSS: [Pico.css](https://picocss.com)
+- Map: [Leaflet](https://leafletjs.com) and [OpenStreetMap](https://www.openstreetmap.org)

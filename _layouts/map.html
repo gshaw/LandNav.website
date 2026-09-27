@@ -1,7 +1,10 @@
 <!doctype html>
-<html>
+<html lang="en">
+
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ page.title }} - {{ site.title }}</title>
 <link rel="icon" sizes="any" href="/favicon.192x192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
@@ -40,6 +43,7 @@
     /* Adjust the size of the logo as needed */
   }
 </style>
+</head>
 
 <body>
   <div id="map"></div>
@@ -53,7 +57,7 @@
       </a>
     </div>
     <div class="">
-      GPS and offline maps for iOS. No ads. Privacy respected.
+      {{ site.description }}
     </div>
   </div>
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
