@@ -1,0 +1,6 @@
+ignores:
+  - "_site/**"
+  - "vendor/**"
+  - ".claude/**"
+  - "CLAUDE.md" # import shim (@AGENTS.md), not prose
+  - "devlog.md" # historical record, kept as written
