@@ -28,10 +28,10 @@ ogimage: /icon.png
 - Shareware: every feature works for free, no subscription, a single in-app purchase if you use it
 - Support independent app developer with a passion for the outdoors
 
-<div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 1rem">
 
 <a href="https://apps.apple.com/app/land-nav/id1662675017" style="overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1684627200" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
 
-<img style="width: 160px; height: 160px; vertical-align: middle" alt="QR code: scan to get Land Nav on the App Store" src="/qrcode.svg">
+<img style="width: 160px; height: 160px" alt="QR code: scan to get Land Nav on the App Store" src="/qrcode.svg">
 
 </div>
