@@ -26,6 +26,7 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
+  - scripts
   - vendor
 
 defaults:
