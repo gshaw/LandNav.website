@@ -1,0 +1,4 @@
+# Workers static assets send this extensionless file with no Content-Type; Apple
+# asks for application/json.
+/.well-known/apple-app-site-association
+  Content-Type: application/json
