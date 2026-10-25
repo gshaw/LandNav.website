@@ -7,39 +7,35 @@ Background for AI agents working in this repo.
 ## What this is
 
 The marketing site for Land Nav, a GPS and offline maps app for iPhone and iPad, live at
-[landnav.app](https://landnav.app). A Jekyll site on Cloudflare Pages. The app itself lives
+[landnav.app](https://landnav.app). A Hugo site on Cloudflare Pages. The app itself lives
 in a separate repo, `LandNav`.
 
 **The repo and the site are both public.** Anything committed here is published.
 
-Keep it minimal. Don't add gems, plugins, pages or build steps unless asked.
+Keep it minimal. Don't add a theme, Hugo modules, pages or build steps unless asked. Every
+template is in `layouts/`.
 
 ## Commands
 
 ```sh
-mise run install   # bundle install
-mise run dev       # serve on :4003 with livereload
+mise run dev       # hugo server on :4003 with live reload
 mise run check     # build + spell + markdownlint + internal links
 mise run deploy    # guard, check, push, wait for Pages, verify
 mise run verify    # curl the live site
 mise run deploy-status  # is main live?
 ```
 
-**Read the counts, not just the exit code.** html-proofer prints `Ran on N files` and cspell
+**Read the counts, not just the exit code.** lychee prints `N OK` and cspell
 prints `Files checked: N`. A green run over zero files checked nothing.
 
 ## Deploys
 
 Cloudflare Pages project `landnav-website` builds every push. `main` goes to production;
-other branches get a preview URL. The build runs `bundle exec jekyll build` with
-`RUBY_VERSION` set in the Cloudflare project, so a Ruby bump means changing `Gemfile`,
-`.mise.toml` and that variable together.
-
-Ruby stays on 3.4.4 because build image v3 preinstalls it. Any other version compiles
-from source and adds about 3 minutes to every build. `Gemfile` and `Gemfile.lock` are
-identical across the five Jekyll sites (gshaw.ca, LandNav, AEDSim, Birds Near Me,
-weisearts.com): change them in one, then copy both files to the others.
-<!-- cspell:ignore weisearts gshaw -- the sibling sites' domains -->
+other branches get a preview URL. The build runs
+`hugo --cleanDestinationDir --panicOnWarning` into `public/`, with `HUGO_VERSION` set in the
+Cloudflare project for production and preview, so a Hugo bump means changing `.mise.toml`
+and that variable together. `--panicOnWarning` makes a deprecation fail the build rather
+than scroll past.
 
 **Deploy with `mise run deploy`**, never a bare `git push` to `main`.
 `scripts/deploy-guard.sh` refuses unless the branch is `main`, the tree is clean and
@@ -52,21 +48,31 @@ GitHub Actions runs `mise run -c check` on pushes and PRs. It doesn't block Clou
 
 ## Layout
 
-- `_config.yml` holds the site name, description, icon, copyright start year and author.
+- `hugo.toml` holds the site name, description, icon, copyright start year and author.
   The layouts read them; don't hard-code them in HTML.
-- `_layouts/page.html` is the main layout. `_includes/head.html` has the meta and Open Graph
-  tags; a page can override the description with `description:` and the preview image with
-  `ogimage:` in front matter.
-- `index.md`, `support.md`, `privacy.md`, `404.md`.
-- `whatsnew/` has one page per release (`whatsnew/1.0.1.md`) and an index. The app opens
+- `layouts/baseof.html` is the page shell. `layouts/_partials/head.html` has the meta and
+  Open Graph tags; a page can override the description with `description:` and the preview
+  image with `ogimage:` in front matter, and add a line under the title with `subtitle:`.
+- `content/`: `_index.md` (the home page), `support.md`, `privacy.md`, `404.md`.
+  `uglyURLs` keeps pages at `/privacy.html`, as before; Cloudflare serves them at
+  `/privacy`, the canonical URL.
+- `content/whatsnew/` has one page per release (`1.0.1.md`) and an index (`_index.md`). The app opens
   `https://landnav.app/whatsnew/<version>`, so keep those URLs stable and add a page before
   a release ships. Mark an unreleased version "(In Development)" on the index.
-- `share/` uses `_layouts/map.html` and `assets/js/map.js`: a Leaflet map that pins the
-  `?ll=lat,lon` query. `.well-known/apple-app-site-association` claims `/share/*` for the
+- `content/share/index.md` uses `layouts/map.html` and `static/assets/js/map.js`: a Leaflet
+  map that pins the `?ll=lat,lon` query. Its `url: /share/` keeps it at `/share/` despite
+  `uglyURLs`. `static/.well-known/apple-app-site-association` claims `/share/*` for the
   onNav Marine app (`com.onnav.ios.marine`), not Land Nav. Check with Gerry before changing
   either.
-- `devlog.md` is a historical record. Leave its wording and typos alone; checks skip it.
-- `assets/css/pico.min.css` is Pico 1.5, copied in rather than loaded from a CDN.
+- `content/devlog.md` is a historical record. Leave its wording and typos alone; checks
+  skip it.
+- `static/` is published as it is: icons, the QR code, screenshots, `.well-known/`, the map
+  script and `assets/css/pico.min.css`, Pico 1.5 copied in rather than loaded from a CDN.
+- `public/` is build output; it's gitignored.
+
+Hugo doesn't run template code inside Markdown files: a loop over data goes in a
+shortcode in `layouts/_shortcodes/`. A link with spaces needs angle brackets:
+`[text](<mailto:x?subject=A B>)`, and a blank line inside a raw HTML block ends it.
 
 ## Writing
 

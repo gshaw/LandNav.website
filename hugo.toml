@@ -1,0 +1,24 @@
+# cspell:ignore robotstxt linkify
+baseURL = "https://landnav.app/"
+title = "Land Nav"
+disableHugoGeneratorInject = true
+# No sitemap, robots.txt or RSS, as before. content/404.md is the 404 page.
+disableKinds = ["taxonomy", "term", "rss", "sitemap", "robotstxt", "404"]
+# Pages at /privacy.html and /whatsnew/1.0.1.html, the URLs they always had.
+# Cloudflare serves them at /privacy, which is the canonical URL. The app opens
+# /whatsnew/<version>, so those URLs must not change.
+uglyURLs = true
+
+[params]
+description = "GPS and offline maps for iPhone and iPad. No ads. Privacy respected."
+icon = "/icon.png"
+start_year = 2023
+[params.author]
+name = "Gerry Shaw"
+email = "gerry_shaw@yahoo.com"
+url = "https://gshaw.ca"
+
+[markup.goldmark.renderer]
+unsafe = true    # raw HTML in Markdown: screenshots, App Store badge
+[markup.goldmark.extensions]
+linkify = false # bare URLs stay text, as they always have

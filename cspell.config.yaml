@@ -5,15 +5,12 @@ allowCompoundWords: true
 ignorePaths:
   - ".git"
   - ".claude"
-  - "_site"
-  - ".jekyll-cache"
-  - "vendor"
-  - "Gemfile.lock"
-  - "assets/css/pico.min.css"
-  - "devlog.md" # historical record, kept as written
+  - "public"
+  - "resources"
+  - "static/assets/css/pico.min.css"
+  - "content/devlog.md" # historical record, kept as written
 words:
   - gshaw
-  - kramdown
   - landnav
   - ogimage # front matter key for the Open Graph image
   - pico
