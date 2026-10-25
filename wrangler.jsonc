@@ -1,0 +1,17 @@
+// landnav.app is static: Workers Builds runs `hugo` on every push and this Worker
+// serves public/, with no script of its own. Branches get a Preview.
+{
+  "$schema": "https://unpkg.com/wrangler@4.143.1/config-schema.json",
+  "name": "landnav-website",
+  "compatibility_date": "2026-10-25",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page",
+  },
+  "routes": [{ "pattern": "landnav.app", "custom_domain": true }],
+  // Production only at landnav.app; a branch's Preview gets a workers.dev URL,
+  // which Cloudflare marks for search engines not to index.
+  "workers_dev": false,
+  "preview_urls": true,
+  "previews": {},
+}
