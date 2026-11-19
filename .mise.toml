@@ -10,7 +10,8 @@ lychee = "0.24.2"
 "npm:wrangler" = "4.143.1"
 
 [tasks.dev]
-run = "hugo server --port 4003 --openBrowser"
+description = "Serve the site at https://ln.dev.gshaw.ca, for the Mac and the phone over the tailnet (Caddy on lagoon forwards to :4050)"
+run = "hugo server --port 4050 --bind 127.0.0.1 --baseURL https://ln.dev.gshaw.ca/ --appendPort=false --liveReloadPort 443 --openBrowser"
 
 [tasks.build]
 run = "hugo --quiet --cleanDestinationDir --panicOnWarning"

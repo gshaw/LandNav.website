@@ -19,12 +19,17 @@ template is in `layouts/`.
 ## Commands
 
 ```sh
-mise run dev       # hugo server on :4003 with live reload
+mise run dev       # https://ln.dev.gshaw.ca, hugo on :4050 with live reload
 mise run check     # build + spell + markdownlint + internal links
 mise run deploy    # guard, check, push, wait for the build, verify
 mise run verify    # curl the live site
 mise run deploy-status  # is main live?
 ```
+
+**The dev URL is `https://ln.dev.gshaw.ca`**, on the Mac and the phone over the tailnet.
+Caddy on lagoon forwards it to :4050, so give Gerry that URL to try a branch, never a
+`ts.net` address or a port. One server owns it: to show a worktree, stop whatever holds
+:4050 and run `mise run dev` there. How it works: Workshop's `Tooling/one-dev-url.md`.
 
 **Read the counts, not just the exit code.** lychee prints `N OK` and cspell
 prints `Files checked: N`. A green run over zero files checked nothing.
