@@ -10,6 +10,7 @@ ignorePaths:
   - "static/assets/css/pico.min.css"
   - "content/devlog.md" # historical record, kept as written
 words:
+  - devhost
   - gshaw
   - landnav
   - ogimage # front matter key for the Open Graph image

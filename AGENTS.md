@@ -28,8 +28,10 @@ mise run deploy-status  # is main live?
 
 **The dev URL is `https://ln.dev.gshaw.ca`**, on the Mac and the phone over the tailnet.
 Caddy on lagoon forwards it to :4050, so give Gerry that URL to try a branch, never a
-`ts.net` address or a port. One server owns it: to show a worktree, stop whatever holds
-:4050 and run `mise run dev` there. How it works: Workshop's `Tooling/one-dev-url.md`.
+`ts.net` address or a port. One server owns it: `devhost serve ln`, run from your
+checkout, stops whatever holds :4050 and runs the dev task there as a launchd job that
+outlives your session (a background command stops at 2 hours). `devhost stop ln` ends it.
+How it works: Workshop's `Tooling/one-dev-url.md`.
 
 **Read the counts, not just the exit code.** lychee prints `N OK` and cspell
 prints `Files checked: N`. A green run over zero files checked nothing.
